@@ -1,0 +1,7 @@
+// Auton route planning here
+
+// Copy and paste stuff here
+chassis.turnToHeading(180, 1500, { .maxSpeed = 127, .minSpeed = 60 });
+chassis.moveToPose(-60, -60, 45, 1500,
+                       {.forwards = false, .horizontalDrift = 6, .lead = 0.5, .maxSpeed = 127, .minSpeed = 60});
+chassis.moveToPoint(-48, -60, 2000, { .maxSpeed = 127, .minSpeed = 60 });
